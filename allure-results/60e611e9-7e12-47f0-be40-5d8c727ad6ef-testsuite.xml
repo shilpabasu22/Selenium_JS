@@ -1,0 +1,150 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1640689123305' stop='1640689128110'>
+    <name>Search: Search for Wdio</name>
+    <title>Search: Search for Wdio</title>
+    <test-cases>
+        <test-case start='1640689123306' status='passed' stop='1640689123307'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1640689123307' status='passed' stop='1640689123315'>
+            <name>Given User navigates to google</name>
+            <title>Given User navigates to google</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1640689123309' status='undefined'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='6e5861b7-e164-47ab-a199-0bd5d0f4fa92-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1640689123315' status='broken' stop='1640689128108'>
+            <name>When user searches for 'Wdio'</name>
+            <title>When user searches for 'Wdio'</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1640689123316' status='passed' stop='1640689123873'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='95f84a6d-3086-494d-81c6-989607d29fcd-attachment.json' type='application/json' size='54'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1640689123893' status='broken' stop='1640689128108'>
+                    <name>POST /session/:sessionId/element/de446efc-ea99-4c90-ad14-80147e08cb78/click</name>
+                    <title>POST /session/:sessionId/element/de446efc-ea99-4c90-ad14-80147e08cb78/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='0f8ae523-f89c-46f8-9e33-0eabcf12961b-attachment.json' type='application/json' size='83'/>
+            </attachments>
+            <failure>
+                <message>element click intercepted: Element &lt;input class="gLFyf gsfi" jsaction="paste:puy29d;" maxlength="2048" name="q" type="text" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" value="" aria-label="Search" data-ved="0ahUKEwjy1eyjq4b1AhX1mFwKHREBDQ0Q39UDCAY"> is not clickable at point (518, 258). Other element would receive the click: &lt;li class="gowsYd ohEWPc">...&lt;/li></message>
+                <stack-trace>element click intercepted: Element &lt;input class="gLFyf gsfi" jsaction="paste:puy29d;" maxlength="2048" name="q" type="text" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" value="" aria-label="Search" data-ved="0ahUKEwjy1eyjq4b1AhX1mFwKHREBDQ0Q39UDCAY"> is not clickable at point (518, 258). Other element would receive the click: &lt;li class="gowsYd ohEWPc">...&lt;/li>
+                  (Session info: chrome=96.0.4664.110)
+                Backtrace:
+                	Ordinal0 [0x00476903+2517251]
+                	Ordinal0 [0x0040F8E1+2095329]
+                	Ordinal0 [0x00312848+1058888]
+                	Ordinal0 [0x00343509+1258761]
+                	Ordinal0 [0x00341868+1251432]
+                	Ordinal0 [0x0033F65D+1242717]
+                	Ordinal0 [0x0033E4A8+1238184]
+                	Ordinal0 [0x00334037+1196087]
+                	Ordinal0 [0x003564D3+1336531]
+                	Ordinal0 [0x00333A36+1194550]
+                	Ordinal0 [0x003565BA+1336762]
+                	Ordinal0 [0x00365BBF+1399743]
+                	Ordinal0 [0x0035639B+1336219]
+                	Ordinal0 [0x003327A7+1189799]
+                	Ordinal0 [0x00333609+1193481]
+                	GetHandleVerifier [0x00605904+1577972]
+                	GetHandleVerifier [0x006B0B97+2279047]
+                	GetHandleVerifier [0x00506D09+534521]
+                	GetHandleVerifier [0x00505DB9+530601]
+                	Ordinal0 [0x00414FF9+2117625]
+                	Ordinal0 [0x004198A8+2136232]
+                	Ordinal0 [0x004199E2+2136546]
+                	Ordinal0 [0x00423541+2176321]
+                	BaseThreadInitThunk [0x74FC6739+25]
+                	RtlGetFullPathName_UEx [0x770B8AFF+1215]
+                	RtlGetFullPathName_UEx [0x770B8ACD+1165]
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1640689128109' status='undefined'>
+            <name>And clicks on the first result</name>
+            <title>And clicks on the first result</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1640689128109' status='undefined'>
+            <name>Then the url is 'https://webdriver.io/'</name>
+            <title>Then the url is 'https://webdriver.io/'</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1640689128109' status='passed' stop='1640689128109'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

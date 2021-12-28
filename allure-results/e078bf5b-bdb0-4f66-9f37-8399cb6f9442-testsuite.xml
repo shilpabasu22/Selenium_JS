@@ -1,0 +1,174 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1640689148193' stop='1640689150904'>
+    <name>Search: Search for Wdio</name>
+    <title>Search: Search for Wdio</title>
+    <test-cases>
+        <test-case start='1640689148193' status='passed' stop='1640689148195'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1640689148195' status='passed' stop='1640689148205'>
+            <name>Given User navigates to google</name>
+            <title>Given User navigates to google</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1640689148197' status='undefined'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='1471b72e-2481-4d39-a487-89f512836791-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1640689148205' status='passed' stop='1640689150860'>
+            <name>When user searches for 'Wdio'</name>
+            <title>When user searches for 'Wdio'</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1640689148208' status='passed' stop='1640689148852'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2f8052fa-5631-4657-8b32-fea69f22cf5a-attachment.json' type='application/json' size='54'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1640689148876' status='passed' stop='1640689149863'>
+                    <name>POST /session/:sessionId/element/d9f75296-f8d4-4128-968b-01295310eacf/click</name>
+                    <title>POST /session/:sessionId/element/d9f75296-f8d4-4128-968b-01295310eacf/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1640689149863' status='passed' stop='1640689149888'>
+                    <name>POST /session/:sessionId/element/d9f75296-f8d4-4128-968b-01295310eacf/clear</name>
+                    <title>POST /session/:sessionId/element/d9f75296-f8d4-4128-968b-01295310eacf/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1640689149892' status='passed' stop='1640689149921'>
+                    <name>POST /session/:sessionId/element/d9f75296-f8d4-4128-968b-01295310eacf/value</name>
+                    <title>POST /session/:sessionId/element/d9f75296-f8d4-4128-968b-01295310eacf/value</title>
+                    <attachments>
+                        <attachment title='Request' source='dbf0d190-b637-4804-b938-414c0c1b24e1-attachment.json' type='application/json' size='22'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1640689149922' status='passed' stop='1640689150855'>
+                    <name>POST /session/:sessionId/actions</name>
+                    <title>POST /session/:sessionId/actions</title>
+                    <attachments>
+                        <attachment title='Request' source='522fa082-6f37-476d-b89f-f840b829cd4d-attachment.json' type='application/json' size='249'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1640689150855' status='passed' stop='1640689150860'>
+                    <name>DELETE /session/:sessionId/actions</name>
+                    <title>DELETE /session/:sessionId/actions</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='ce1132a1-49a2-4273-8939-e6f7927165eb-attachment.json' type='application/json' size='83'/>
+            </attachments>
+        </test-case>
+        <test-case start='1640689150860' status='passed' stop='1640689150865'>
+            <name>And clicks on the first result</name>
+            <title>And clicks on the first result</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1640689150861' status='undefined'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='31720473-1b96-480d-9a39-d63522ae65a6-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1640689150865' status='failed' stop='1640689150903'>
+            <name>Then the url is 'https://webdriver.io/'</name>
+            <title>Then the url is 'https://webdriver.io/'</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps>
+                <step start='1640689150866' status='passed' stop='1640689150896'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='e05d25f5-3e70-4d60-9b6e-def91fa838c4-attachment.json' type='application/json' size='153'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError</message>
+                <stack-trace>AssertionError
+                    + expected - actual
+                
+                    -https://www.google.co.uk/search?q=%27Wdio%27&amp;btnK=Google+Search&amp;source=hp&amp;ei=_e3KYYXsO4yD8gLIsaCgDA&amp;iflsig=ALs-wAMAAAAAYcr8DsyvIuIoHn4yIzHHwDks4cjKwgwa
+                    +'https://webdriver.io/'
+                
+                    at World.&lt;anonymous> (F:\selenium_JS\test\features\step-definitions\demo.ts:20:29)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1640689150903' status='passed' stop='1640689150904'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.110'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
